@@ -1,13 +1,13 @@
 /**
  * 
  */
-package es.indra.aerolineas.beans;
+package es.indra.aerolineas.beans.impl;
 
 /**
  * @author P.era-1
  *
  */
-public class Persona {
+public abstract class Persona {
 	
 	protected String nombre;
 	private String apellido;
@@ -46,4 +46,6 @@ public class Persona {
 	public int getId() {
 		return id;
 	}
+	
+	public abstract String solicitarInformacion();
 }
