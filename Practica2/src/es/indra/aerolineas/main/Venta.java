@@ -3,6 +3,7 @@
  */
 package es.indra.aerolineas.main;
 
+import es.indra.aerolineas.beans.IAerolinea;
 import es.indra.aerolineas.beans.impl.Aerolinea;
 import es.indra.aerolineas.beans.impl.Empleado;
 import es.indra.aerolineas.beans.impl.Pasajero;
@@ -12,7 +13,7 @@ import es.indra.aerolineas.beans.impl.Vuelo;
  * @author josejarizav
  *
  */
-public class Venta {
+public class Venta implements IAerolinea{
 	
 	private static Vuelo[] creaVuelos() {
 		Vuelo[] vuelos = new Vuelo[10];
@@ -60,9 +61,13 @@ public class Venta {
 		
 		System.out.println("*************************************************************************");
 		
-		
-		aa.anularVuelos(" ", "a");
 
+	}
+
+	@Override
+	public void anularVuelos(String... vuelos) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
