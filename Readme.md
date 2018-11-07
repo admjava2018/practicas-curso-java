@@ -9,7 +9,7 @@ El paquete raíz es es.indra.aerolinea
 Paquete para Interfaces de beans
 
 *Interfaces*
-*IAerolinea: Interfaz que define el comportamiento de la gestión de vuelos
+* IAerolinea: Interfaz que define el comportamiento de la gestión de vuelos
 
 ### .beans.impl
 Paquete de las implementaciones de interfaces o POJOs
