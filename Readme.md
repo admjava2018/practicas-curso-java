@@ -1,7 +1,22 @@
-# URLs útiles
+# Estructura del Proyecyo Aerolínea
 
-## GIT
-<URLs> de guías útiles de gestión de repositorios de `código fuente`
+Proyecto que busca
 
-* http://rogerdudler.github.io/git-guide/index.es.html 
-* https://medium.com/@sthefany/primeros-pasos-con-github-7d5e0769158c 
+## Paquetes y Clases
+El paquete raíz es es.indra.aerolinea
+
+### .beans
+Paquete para Interfaces de beans
+
+*Interfaces*
+*IAerolinea: Interfaz que define el comportamiento de la gestión de vuelos
+
+### .beans.impl
+Paquete de las implementaciones de interfaces o POJOs
+
+*Clases*
+
+* Aerolinea: Implementación de interfaz IAerolínea. Da cuerpo a los métodos: .... y las variables:
+   + nombre: nombre de la aerolínea.
+   + id: identificador de la aerolínea.
+   + vuelos[ ]: array de todos los vuelos disponibles.
