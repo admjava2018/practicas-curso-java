@@ -10,9 +10,15 @@ package es.indra.aerolineas.beans.impl;
 public abstract class Persona {
 	
 	protected String nombre;
-	private String apellido;
-	private String dni;
+	protected String apellido;
+	protected String dni;
 	private int id;
+	
+	public void datos(String nombre, String apellido, String dni) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.dni = dni;
+	}
 	
 	public void setNombre(String nombre) {
 	this.nombre = nombre;

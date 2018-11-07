@@ -3,6 +3,8 @@
  */
 package es.indra.aerolineas.main;
 
+import java.util.Scanner;
+
 import es.indra.aerolineas.beans.IAerolinea;
 import es.indra.aerolineas.beans.impl.Aerolinea;
 import es.indra.aerolineas.beans.impl.Empleado;
@@ -31,7 +33,10 @@ public class Venta implements IAerolinea{
 
 		Vuelo[] vuelos = creaVuelos();
 		
-		
+		System.out.println("Introduce tus datos personales");
+		Scanner scan = new Scanner(System.in);
+		Pasajero pasajero1 = new Pasajero();
+		System.out.println(pasajero1.getNombre());
 		Aerolinea aa = new Aerolinea(10, "American Airlines",vuelos);
 		
 		aa.consultarVuelos("Madrid");
@@ -64,6 +69,8 @@ public class Venta implements IAerolinea{
 		
 
 	}
+	
+	
 
 	@Override
 	public void anularVuelos(String... vuelos) {

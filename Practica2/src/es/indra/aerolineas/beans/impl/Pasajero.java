@@ -24,4 +24,9 @@ public class Pasajero extends Persona{
 	public String solicitarInformacion() {
 		return null;
 	}
+	
+	public void setNombre(String nombre) {
+		super.setNombre(nombre);
+	}
+	
 }

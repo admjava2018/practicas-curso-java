@@ -4,6 +4,7 @@
 package es.indra.aerolineas.beans.impl;
 
 import es.indra.aerolineas.beans.IAerolinea;
+import es.indra.aerolineas.exceptions.ErrorLecturaDeVuelosException;
 import es.indra.aerolineas.services.ReadFile;
 
 /**
@@ -66,7 +67,11 @@ public class Aerolinea implements IAerolinea {
 	
 	public void consultarVuelo() {
 		ReadFile r = new ReadFile();
-		r.retornarVuelos();
+		try {
+			r.retornarVuelos();
+		} catch (ErrorLecturaDeVuelosException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void anularVuelos(String... vuelos) {
