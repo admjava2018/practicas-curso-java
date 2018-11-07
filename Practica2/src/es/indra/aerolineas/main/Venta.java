@@ -36,6 +36,7 @@ public class Venta implements IAerolinea{
 		
 		aa.consultarVuelos("Madrid");
 		aa.consultarVuelos("Madrid", "Nueva York");
+		aa.consultarVuelo();
 		
 		Pasajero p = new Pasajero();
 		

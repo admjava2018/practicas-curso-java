@@ -4,6 +4,7 @@
 package es.indra.aerolineas.beans.impl;
 
 import es.indra.aerolineas.beans.IAerolinea;
+import es.indra.aerolineas.services.ReadFile;
 
 /**
  * @author josejarizav
@@ -61,6 +62,11 @@ public class Aerolinea implements IAerolinea {
 	
 	public void consultarVuelos(String origen, String destino) {
 		System.out.printf("Método de 2 parámetros: %s y %s %n ", origen, destino);
+	}
+	
+	public void consultarVuelo() {
+		ReadFile r = new ReadFile();
+		r.retornarVuelos();
 	}
 	
 	public void anularVuelos(String... vuelos) {
